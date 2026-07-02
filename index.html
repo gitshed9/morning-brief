@@ -1,4 +1,592 @@
 <!DOCTYPE html>
-<html><head><meta http-equiv="refresh" content="0;url=morning-brief-2026-07-02.html">
-<title>Morning Brief</title></head>
-<body><a href="morning-brief-2026-07-02.html">Go to Morning Brief — 2 July 2026</a></body></html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 0; background: #f1f5f9; font-family: Arial, Helvetica, sans-serif; font-size: 13.5px; color: #1a1a1a; }
+  #brief-nav { position: sticky; top: 0; z-index: 1000; background: #2E75B6; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 6px rgba(0,0,0,0.18); gap: 12px; }
+  .nav-left { display: flex; align-items: center; gap: 12px; min-width: 0; }
+  .nav-title { color: #fff; font-weight: bold; font-size: 14px; letter-spacing: 0.4px; white-space: nowrap; }
+  .nav-sep { color: rgba(255,255,255,0.4); font-size: 14px; }
+  #history-select { background: rgba(255,255,255,0.13); border: 1px solid rgba(255,255,255,0.28); color: #fff; padding: 5px 28px 5px 10px; border-radius: 6px; font-size: 12.5px; cursor: pointer; outline: none; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='white' opacity='.7'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 9px center; max-width: 240px; }
+  #history-select option { background: #1e4d7a; color: #fff; }
+  .nav-right { display: flex; align-items: center; gap: 8px; }
+  #reload-btn { background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.32); color: #fff; padding: 6px 14px; border-radius: 6px; font-size: 12.5px; font-family: inherit; cursor: pointer; white-space: nowrap; transition: background 0.15s; display: flex; align-items: center; gap: 5px; }
+  #reload-btn:hover { background: rgba(255,255,255,0.24); }
+  #reload-btn.running { opacity: 0.65; cursor: not-allowed; }
+  #reload-btn .spin { display: inline-block; animation: spin 1s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  #status-toast { display: none; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #1e293b; color: #fff; padding: 10px 20px; border-radius: 8px; font-size: 13px; z-index: 2000; box-shadow: 0 4px 16px rgba(0,0,0,0.25); white-space: nowrap; }
+  #brief-outer { max-width: 860px; margin: 24px auto; padding: 0 16px 40px; }
+  #brief-card { background: #fff; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.07), 0 4px 16px rgba(0,0,0,0.05); overflow: hidden; }
+  #brief-content { padding: 36px 44px; }
+  .viewing-badge { display: none; background: #FEF3C7; border: 1px solid #FCD34D; color: #92400E; font-size: 12px; padding: 7px 16px; text-align: center; font-weight: 500; }
+</style>
+</head>
+<body>
+<div id="brief-nav">
+  <div class="nav-left">
+    <span class="nav-title">MORNING BRIEF</span>
+    <span class="nav-sep">|</span>
+    <select id="history-select" title="Browse past briefs"></select>
+  </div>
+  <div class="nav-right">
+    <button id="reload-btn" title="Re-run today's morning brief">↻ Reload</button>
+  </div>
+</div>
+<div class="viewing-badge" id="viewing-badge"></div>
+<div id="brief-outer">
+  <div id="brief-card">
+    <div id="brief-content" data-date="2026-07-03">
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- BRIEF CONTENT STARTS HERE -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+
+<div style="max-width:820px;margin:0 auto;background:#fff;font-family:Arial,Helvetica,sans-serif;font-size:13.5px;line-height:1.6;color:#1a1a1a;">
+
+<!-- HEADER -->
+<div style="border-bottom:3px solid #2E75B6;padding-bottom:10px;margin-bottom:20px;">
+  <h1 style="margin:0;font-size:21px;color:#2E75B6;font-weight:bold;">MORNING BRIEFING</h1>
+  <div style="font-size:12px;color:#666;margin-top:5px;">Friday, 3 July 2026 · Generated 9:35am AEDT · Confidential — internal use only</div>
+</div>
+
+<!-- SECTION 1: MACRO OVERVIEW -->
+<h2 style="font-size:13px;font-weight:bold;color:#fff;background:#2E75B6;padding:7px 14px;margin:24px -44px 14px -44px;letter-spacing:0.4px;">1 — MACRO OVERVIEW</h2>
+
+<p style="margin:0 0 12px 0;"><strong>US markets split on an ugly June jobs miss:</strong> the S&amp;P 500 finished flat (7,483) while the DJIA reached a new all-time high (+1.1%) as a historic rotation out of semiconductors and into defensives, healthcare and industrials played out. Nasdaq 100 fell -0.8% on the semi bloodbath (SOX -5.4%, SemiCap -9.9% — worst two-day stretch since COVID), driven partly by a Deepseek-adjacent fear (China's GLM-5.2 model from Z.ai claimed near-parity with leading US AI models), further reports Apple is lobbying to source memory from CXMT/YMTC, and extreme leveraged ETF rebalancing at the close. June NFP printed 57k vs 113k expected with a -74k two-month revision — labour market cracks deepening — pushing the market to price only 28bps of Fed hikes before year-end (was 40bps). GS prime brokerage noted Global Fundamental L/S funds posted their best quarterly return on record (+18.4% in Q2), while momentum factor suffered a near-COVID-scale 18% two-day drawdown.</p>
+
+<ul style="margin:0 0 12px 0;padding-left:18px;">
+  <li><strong>Jobs miss signals macro slowdown:</strong> NFP 57k vs 113k est; participation rate fell to 61.5% (vs 61.8% est); Fed hike bets pared to 28bps for 2026; Warsh first FOMC was hawkish but data now doing the dovish work for him.</li>
+  <li><strong>Semi rout accelerating:</strong> SOX -5.4%, SemiCap -9.9%; Sandisk -14%, KLAC -11.5%, Lam -10.2%, Applied Materials -7.4%; GS momentum pair now -18% over 2 days (worst since COVID); elevated retail leverage via 0DTE call options in semis compounding moves.</li>
+  <li><strong>Defensive rotation dominant:</strong> Hospitals +5.9% (CMS 2027 payment policy revision); Utilities +1.9%; Consumer Staples +2.5%; Healthcare +2.5%; Industrials +1.0%; Energy +1.0%; Materials +1.75%.</li>
+  <li><strong>Gold at $4,121/oz (+2.2%), Silver +2.9%:</strong> precious metals surging again; supportive for RMS, FFM (GROWTH). Oil flat (Brent US$71.6, WTI US$68.5); Minas 211 crack -3.6% to US$31.5/bbl; Singapore jet fuel -3.5% — ongoing headwind for VEA (GROWTH).</li>
+  <li><strong>ASX SPI +0.5% to 8,754:</strong> strong implied open. AUD/USD +0.4% to 0.692. AU 10Y +3bps to 4.82%. BHP +1.0% implied; WDS +0.7%; RMD +3.3%.</li>
+  <li><strong>Key B* rating changes today:</strong> SGH upgraded to OW (PT $55); ASX downgraded to UW (PT $53.25); BSL reinstated at Neutral (PT $29). GS downgrades FMG to Sell (PT $18.90); adds RMD to APAC Conviction List.</li>
+</ul>
+
+<!-- SECTION 1B: US MARKETS OVERVIEW -->
+<h2 style="font-size:13px;font-weight:bold;color:#fff;background:#2E75B6;padding:7px 14px;margin:24px -44px 14px -44px;letter-spacing:0.4px;">1B — US MARKETS OVERVIEW</h2>
+
+<p style="margin:0 0 12px 0;">US markets closed out the pre-Independence Day session in a striking bifurcation: the DJIA +1.1% hit a new all-time high while the Nasdaq 100 fell -0.8%, with the S&amp;P 500 flat at 7,483. The session was defined by the second consecutive day of violent semi selling (SOX -5.4%; two-day total approaching -18%), driven by the GS momentum factor unwind, China AI model fears, and forced ETF rebalancing of $13bn+ at the close. Soft June NFP (57k vs 113k) provided a brief early bid to bonds and growth but was ultimately overwhelmed by tech-specific flows. Breadth was positive — most sectors rose — but semiconductors and megacap tech dragged indices.</p>
+
+<table style="width:100%;border-collapse:collapse;font-size:12.5px;margin-bottom:16px;">
+  <thead>
+    <tr style="background:#D5E8F0;border:1px solid #B4CFE0;">
+      <td style="padding:8px 12px;font-weight:600;font-size:12px;">Sector</td>
+      <td style="padding:8px 12px;font-weight:600;font-size:12px;text-align:right;">Move</td>
+      <td style="padding:8px 12px;font-weight:600;font-size:12px;">Key Drivers / Notable Names</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background:#EFF6FF;">
+      <td style="padding:8px 12px;border:1px solid #eee;font-weight:bold;">★ Technology</td>
+      <td style="padding:8px 12px;border:1px solid #eee;text-align:right;color:#dc2626;font-weight:bold;">-1.69%</td>
+      <td style="padding:8px 12px;border:1px solid #eee;">Semi massacre dominates; ETF forced rebalancing $13bn+ sell at close; China AI parity fears</td>
+    </tr>
+    <tr style="background:#F8FAFF;">
+      <td style="padding:6px 12px 6px 24px;border:1px solid #eee;color:#555;font-size:12px;">Semiconductors</td>
+      <td style="padding:6px 12px;border:1px solid #eee;text-align:right;font-size:12px;color:#dc2626;">-5.4%</td>
+      <td style="padding:6px 12px;border:1px solid #eee;font-size:12px;">SNDK -14.1%, KLAC -11.5%, LRCX -10.2%, AMAT -7.4%; NVDA -1.4% (relatively resilient)</td>
+    </tr>
+    <tr style="background:#F8FAFF;">
+      <td style="padding:6px 12px 6px 24px;border:1px solid #eee;color:#555;font-size:12px;">SemiCap Equipment</td>
+      <td style="padding:6px 12px;border:1px solid #eee;text-align:right;font-size:12px;color:#dc2626;">-9.9%</td>
+      <td style="padding:6px 12px;border:1px solid #eee;font-size:12px;">Worst 2-day since COVID; momentum unwind; KLAG -22.4%, LRCU -20.9% (leveraged ETFs)</td>
+    </tr>
+    <tr style="background:#F8FAFF;">
+      <td style="padding:6px 12px 6px 24px;border:1px solid #eee;color:#555;font-size:12px;">Software</td>
+      <td style="padding:6px 12px;border:1px solid #eee;text-align:right;font-size:12px;color:#16a34a;">+est +1-2%</td>
+      <td style="padding:6px 12px;border:1px solid #eee;font-size:12px;">Relative outperformer vs semis; ADBE +4.1% (HSBC Buy); PLTR +2.8% (DA Davidson Buy $175)</td>
+    </tr>
+    <tr style="background:#F8FAFF;">
+      <td style="padding:6px 12px 6px 24px;border:1px solid #eee;color:#555;font-size:12px;">Internet / Megacap</td>
+      <td style="padding:6px 12px;border:1px solid #eee;text-align:right;font-size:12px;color:#dc2626;">mixed</td>
+      <td style="padding:6px 12px;border:1px solid #eee;font-size:12px;">AAPL +4.8%; AMZN +0.4%; GOOGL -0.4% (EU Android fine upheld €4.1b); META -4.9% (AI agents not accelerating); NVDA -1.4%</td>
+    </tr>
+    <tr style="background:#EFF6FF;">
+      <td style="padding:8px 12px;border:1px solid #eee;font-weight:bold;">★ Industrials</td>
+      <td style="padding:8px 12px;border:1px solid #eee;text-align:right;color:#16a34a;font-weight:bold;">+0.95%</td>
+      <td style="padding:8px 12px;border:1px solid #eee;">Defensive rotation; defence names strong; AVAV +10.7% ($500m contract); LHX +3.4% (FAA contract)</td>
+    </tr>
+    <tr style="background:#F8FAFF;">
+      <td style="padding:6px 12px 6px 24px;border:1px solid #eee;color:#555;font-size:12px;">Defence &amp; Aerospace</td>
+      <td style="padding:6px 12px;border:1px solid #eee;text-align:right;font-size:12px;color:#16a34a;">+est +2%</td>
+      <td style="padding:6px 12px;border:1px solid #eee;font-size:12px;">AVAV +10.7% ($500m IDIQ contract); LHX +3.4%; Jacobs +2.6% (Tilt Renewables SA)</td>
+    </tr>
+    <tr style="background:#F8FAFF;">
+      <td style="padding:6px 12px 6px 24px;border:1px solid #eee;color:#555;font-size:12px;">Transportation &amp; Logistics</td>
+      <td style="padding:6px 12px;border:1px solid #eee;text-align:right;font-size:12px;color:#dc2626;">-est -1%</td>
+      <td style="padding:6px 12px;border:1px solid #eee;font-size:12px;">GBX -0.7% (Q3 miss); CMCO -6.6% (CFO transition); freight rates mixed</td>
+    </tr>
+    <tr style="background:#EFF6FF;">
+      <td style="padding:8px 12px;border:1px solid #eee;font-weight:bold;">★ Consumer Discretionary</td>
+      <td style="padding:8px 12px;border:1px solid #eee;text-align:right;color:#dc2626;font-weight:bold;">-0.85%</td>
+      <td style="padding:8px 12px;border:1px solid #eee;">Tesla delivery beat ignored; Nike turnaround scepticism; auto weakness</td>
+    </tr>
+    <tr style="background:#F8FAFF;">
+      <td style="padding:6px 12px 6px 24px;border:1px solid #eee;color:#555;font-size:12px;">Autos</td>
+      <td style="padding:6px 12px;border:1px solid #eee;text-align:right;font-size:12px;color:#dc2626;">-6.5%</td>
+      <td style="padding:6px 12px;border:1px solid #eee;font-size:12px;">TSLA -7.5% (Q2 deliveries 480k beat 396k est but stock fell); RIVN +8.4% (guidance raise)</td>
+    </tr>
+    <tr style="background:#F8FAFF;">
+      <td style="padding:6px 12px 6px 24px;border:1px solid #eee;color:#555;font-size:12px;">Retail</td>
+      <td style="padding:6px 12px;border:1px solid #eee;text-align:right;font-size:12px;color:#dc2626;">-2%</td>
+      <td style="padding:6px 12px;border:1px solid #eee;font-size:12px;">NKE -2% (China sales -12%, cautious tone); AEO -4.8% (CFO departure); GPC +12.9% (O'Reilly interest)</td>
+    </tr>
+    <tr style="background:#F8FAFF;">
+      <td style="padding:6px 12px 6px 24px;border:1px solid #eee;color:#555;font-size:12px;">Restaurants &amp; Leisure</td>
+      <td style="padding:6px 12px;border:1px solid #eee;text-align:right;font-size:12px;color:#16a34a;">+est flat/+</td>
+      <td style="padding:6px 12px;border:1px solid #eee;font-size:12px;">SDXAY +7.8% (Sodexo organic rev +2%); no major US restaurant movers</td>
+    </tr>
+    <tr style="background:#EFF6FF;">
+      <td style="padding:8px 12px;border:1px solid #eee;font-weight:bold;">★ Consumer Staples</td>
+      <td style="padding:8px 12px;border:1px solid #eee;text-align:right;color:#16a34a;font-weight:bold;">+2.49%</td>
+      <td style="padding:8px 12px;border:1px solid #eee;">Defensive bid; KO +3.5% (India bottling IPO ~$1b); defensive positioning ahead of long weekend</td>
+    </tr>
+    <tr style="background:#F8FAFF;">
+      <td style="padding:6px 12px 6px 24px;border:1px solid #eee;color:#555;font-size:12px;">Food &amp; Beverage</td>
+      <td style="padding:6px 12px;border:1px solid #eee;text-align:right;font-size:12px;color:#16a34a;">+3%</td>
+      <td style="padding:6px 12px;border:1px solid #eee;font-size:12px;">KO +3.5% (India bottling unit IPO); BSET +7.7% (Q2 sales beat)</td>
+    </tr>
+    <tr style="background:#F8FAFF;">
+      <td style="padding:6px 12px 6px 24px;border:1px solid #eee;color:#555;font-size:12px;">Supermarkets &amp; Household</td>
+      <td style="padding:6px 12px;border:1px solid #eee;text-align:right;font-size:12px;color:#16a34a;">+est +1%</td>
+      <td style="padding:6px 12px;border:1px solid #eee;font-size:12px;">WMT, COST stable; defensive flows</td>
+    </tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">Energy</td><td style="padding:7px 12px;border:1px solid #eee;text-align:right;color:#16a34a;">+1.02%</td><td style="padding:7px 12px;border:1px solid #eee;">CVX +2.1% (Wolf raised to OP $210); Saudi ramping exports; oil flat Brent $71.6</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">Financials</td><td style="padding:7px 12px;border:1px solid #eee;text-align:right;color:#16a34a;">+0.81%</td><td style="padding:7px 12px;border:1px solid #eee;">Blue Owl +4.6%; Blackstone +2.7%; banks stable; GS L/S funds record Q2 (+18.4%)</td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">Health Care</td><td style="padding:7px 12px;border:1px solid #eee;text-align:right;color:#16a34a;">+2.49%</td><td style="padding:7px 12px;border:1px solid #eee;">CMS 2027 payment reform: hospitals +5.9%, HCare Facilities +4.5%; MDT +5.0%; ISRG +5.9%</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">Materials</td><td style="padding:7px 12px;border:1px solid #eee;text-align:right;color:#16a34a;">+1.75%</td><td style="padding:7px 12px;border:1px solid #eee;">Gold +2.2%; NEM +4.0%; CLF +4.7% ($400m govt contract); BHP +1.4% (Cerro Colorado permit)</td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">Real Estate</td><td style="padding:7px 12px;border:1px solid #eee;text-align:right;color:#16a34a;">+1.29%</td><td style="padding:7px 12px;border:1px solid #eee;">GOOD +1.5% (Ohio Life Sciences 10yr lease); rate cut hopes supportive</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">Utilities</td><td style="padding:7px 12px;border:1px solid #eee;text-align:right;color:#16a34a;">+1.89%</td><td style="padding:7px 12px;border:1px solid #eee;">BE +8% (Brookfield AI power partnership); defensive rotation; NFP miss supports rate outlook</td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">Communication Services</td><td style="padding:7px 12px;border:1px solid #eee;text-align:right;color:#dc2626;">-1.02%</td><td style="padding:7px 12px;border:1px solid #eee;">META -4.9% (AI agents not accelerating); GOOGL -0.4% (EU fine upheld); HOOD +3.8%</td></tr>
+  </tbody>
+</table>
+
+<p style="font-size:12.5px;font-weight:600;color:#2E75B6;margin:12px 0 6px 0;">Major News Events</p>
+<ul style="margin:0 0 16px 0;padding-left:18px;font-size:12.5px;">
+  <li><strong>NFP Miss</strong> — June payrolls 57k vs 113k est; -74k two-month revision; participation 61.5% (vs 61.8%); Fed hike pricing cut to 28bps. Market initially rallied bonds then rotated.</li>
+  <li><strong>TSLA (-7.5%)</strong> — Q2 deliveries 480k beat (~396k est, +25% YoY) but stock sold off hard; run-up into print fully reversed.</li>
+  <li><strong>META (-4.9%)</strong> — Zuckerberg said AI agent development has "not accelerated in the way we expected" over the last 4 months.</li>
+  <li><strong>AAPL (+4.8%)</strong> — Reports Apple negotiating Chinese memory chip suppliers (CXMT/YMTC) with political cover; services strength reiterated by broker.</li>
+  <li><strong>GOOGL (-0.4%)</strong> — EU Court of Justice upheld €4.1b Android antitrust fine; opens door to civil claims against Google.</li>
+  <li><strong>GPC (+12.9%)</strong> — Auto unit draws M&amp;A interest from O'Reilly (ORLY); deal speculation dominated the print.</li>
+  <li><strong>BE (+8%)</strong> — Bloom Energy expanded Brookfield partnership to finance AI power infrastructure projects.</li>
+</ul>
+
+<!-- SECTION 2: WHERE TO LOOK TODAY -->
+<h2 style="font-size:13px;font-weight:bold;color:#fff;background:#2E75B6;padding:7px 14px;margin:24px -44px 14px -44px;letter-spacing:0.4px;">2 — WHERE TO LOOK TODAY</h2>
+
+<!-- A: FMG -->
+<div style="border-left:4px solid #DC2626;background:#FFF5F5;padding:10px 14px;margin-bottom:10px;border-radius:2px;">
+  <span style="display:inline-block;padding:2px 9px;border-radius:10px;font-size:10px;font-weight:700;background:#FEE2E2;color:#991B1B;">URGENT</span>
+  <strong style="margin-left:8px;">A — FMG: CMRG Port Delivery Ban from 15 July + GS Downgrades to Sell</strong>
+  <p style="margin:6px 0 0 0;font-size:12.5px;">CMRG (China Minerals Resource Group) told mills/traders not to take delivery of FMG's Super Special Fines and Fortune Fines from 15 July as supply-term talks sour (mirrors BHP standoff that dragged BHP for weeks before settling in April). GS simultaneously downgrades FMG to Sell with PT A$18.90 — citing rising capex, stretched valuation (~1.1x NAV vs peers 0.9x), FCF yield ~2% vs peers ~4%, and iron ore price headwinds (GS sees 61% index potentially dropping below US$95/dmt). FMG implied offshore TBD but expect material weakness at open.</p>
+</div>
+
+<!-- B: Semi Rout -->
+<div style="border-left:4px solid #DC2626;background:#FFF5F5;padding:10px 14px;margin-bottom:10px;border-radius:2px;">
+  <span style="display:inline-block;padding:2px 9px;border-radius:10px;font-size:10px;font-weight:700;background:#FEE2E2;color:#991B1B;">URGENT</span>
+  <strong style="margin-left:8px;">B — Global Semi Rout: Read-through for ASX Tech</strong>
+  <p style="margin:6px 0 0 0;font-size:12.5px;">SOX -5.4% overnight; SemiCap index -9.9% — worst 2-day since COVID. The momentum factor (GS PB) is now down ~18% in two sessions, a level historically associated with forced unwinds. China's GLM-5.2 (Z.ai) "near parity" claim, Apple/Chinese chip supplier talks, and massive ETF rebalancing drove the move. Retail investors holding 0DTE call options in semis faced extreme pain. ASX read-through: watch WTC, XRO (GROWTH) and any tech/software positioning. GS note on ASX FY26 confirms Tech sector was -35% for the year — semis not a direct ASX issue but sentiment matters.</p>
+</div>
+
+<!-- C: OCL -->
+<div style="border-left:4px solid #D97706;background:#FFFBEB;padding:10px 14px;margin-bottom:10px;border-radius:2px;">
+  <span style="display:inline-block;padding:2px 9px;border-radius:10px;font-size:10px;font-weight:700;background:#FEF3C7;color:#92400E;">HIGH</span>
+  <strong style="margin-left:8px;">C — OCL (Objective Corp): B* Calls DoD Contract Loss a Material Overreaction — AU Watchlist</strong>
+  <p style="margin:6px 0 0 0;font-size:12.5px;">B* published a note arguing that the Shock DoD contract loss is a material overreaction, with OCL now trading at only 13x ex-cash PE. Attractive entry for a high-quality govtech platform. Worth revisiting thesis and sizing.</p>
+</div>
+
+<!-- D: VEA Crack Spreads -->
+<div style="border-left:4px solid #D97706;background:#FFFBEB;padding:10px 14px;margin-bottom:10px;border-radius:2px;">
+  <span style="display:inline-block;padding:2px 9px;border-radius:10px;font-size:10px;font-weight:700;background:#FEF3C7;color:#92400E;">HIGH</span>
+  <strong style="margin-left:8px;">D — VEA (Viva Energy): Crack Spread Compression Continues — <span style="color:#2E75B6;">GROWTH</span> / <span style="color:#5B9BD5;">AU Watchlist</span></strong>
+  <p style="margin:6px 0 0 0;font-size:12.5px;">Minas 211 crack -3.6% overnight to US$31.5/bbl; Singapore Jet Fuel -3.5% to US$110.8/bbl. Oil flat (Brent $71.6; WTI $68.5) with Saudi Arabia ramping Ras Tanura exports on spot pricing — supply pressure compressing crack spreads further. VEA's Geelong margins remain under pressure. Monitor Minas 211 daily; key watch for FY26 EBITDA estimates.</p>
+</div>
+
+<!-- E: PXA -->
+<div style="border-left:4px solid #7F7F7F;background:#FAFAFA;padding:10px 14px;margin-bottom:10px;border-radius:2px;">
+  <span style="display:inline-block;padding:2px 9px;border-radius:10px;font-size:10px;font-weight:700;background:#F3F4F6;color:#374151;">MEDIUM</span>
+  <strong style="margin-left:8px;">E — PXA (PEXA Group): IPART Draft Proposes 20% Revenue Cut</strong>
+  <p style="margin:6px 0 0 0;font-size:12.5px;">IPART draft report proposes a 20% reduction to certain transfer transactions — A$70m revenue hit (20% Australian business revenue, 17% group). Morgans note says this is above the high end of estimates (they expected ~15%). PXA hopes for a 4-year phase-in. Consultation period still open. Stock up +3.8% pre-mkt on relief at magnitude being "known" vs feared worse — but downside risk remains if phase-in rejected. BOEQ notes the event.</p>
+</div>
+
+<!-- F: Gold -->
+<div style="border-left:4px solid #059669;background:#F0FDF4;padding:10px 14px;margin-bottom:10px;border-radius:2px;">
+  <span style="display:inline-block;padding:2px 9px;border-radius:10px;font-size:10px;font-weight:700;background:#D1FAE5;color:#065F46;">POSITIVE</span>
+  <strong style="margin-left:8px;">F — Gold $4,121/oz (+2.2%) &amp; Silver +2.9%: Supportive for RMS, FFM — <span style="color:#2E75B6;">GROWTH</span></strong>
+  <p style="margin:6px 0 0 0;font-size:12.5px;">Gold back above $4,100 on NFP-driven rate cut repricing and safe haven demand. Silver at US$60.90/oz. Both RMS and FFM (GROWTH) well leveraged. B* published a Northern Star (NST) note: "Better end to FY26 than feared" and NST appointing new CEO Suresh Vadnagra. Gold sector broadly positive into the open.</p>
+</div>
+
+<!-- SECTION 3: POTENTIAL NEW IDEAS -->
+<h2 style="font-size:13px;font-weight:bold;color:#fff;background:#2E75B6;padding:7px 14px;margin:24px -44px 14px -44px;letter-spacing:0.4px;">3 — POTENTIAL NEW IDEAS</h2>
+
+<table style="width:100%;border-collapse:collapse;font-size:12.5px;margin-bottom:16px;">
+  <thead><tr style="background:#D5E8F0;border:1px solid #B4CFE0;">
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Stock</td>
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Source / Rec</td>
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Thesis</td>
+  </tr></thead>
+  <tbody>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;"><strong>SGH</strong><br><span style="font-size:11px;color:#666;">SGH Ltd</span></td><td style="padding:7px 12px;border:1px solid #eee;">B* OW, PT $55</td><td style="padding:7px 12px;border:1px solid #eee;">Reinstated OW; 13.6x FY27 EPS; Boral supporting FY27; 9% EPS CAGR FY26-30; strong balance sheet. Limit earnings risk into FY26 result.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;"><strong>OCL</strong><br><span style="font-size:11px;color:#666;">Objective Corp — AU Watchlist</span></td><td style="padding:7px 12px;border:1px solid #eee;">B* (implied buy)</td><td style="padding:7px 12px;border:1px solid #eee;">DoD contract loss overreaction; 13x ex-cash PE for high-quality govtech platform. B* explicitly calling "shock overreaction" — entry opportunity flag.</td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;"><strong>GDG</strong><br><span style="font-size:11px;color:#666;">Generation Dev Group</span></td><td style="padding:7px 12px;border:1px solid #eee;">Morgans Table Thumper</td><td style="padding:7px 12px;border:1px solid #eee;">BlackRock/Colonial First State deal to provide investment bonds to $180b CFS platform. Investment bond inflows spiked post-budget. Directors buying. Below historical PE range.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;"><strong>IMR</strong><br><span style="font-size:11px;color:#666;">Imricor Medical</span></td><td style="padding:7px 12px;border:1px solid #eee;">Morgans Spec Buy, TP $2.94</td><td style="padding:7px 12px;border:1px solid #eee;">FDA clearance for NorthStar mapping + diagnostic catheter in paediatric patients — opens 250+ US children's hospitals. ~200-250k procedure TAM. TP lifted $2.61→$2.94.</td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;"><strong>EIQ</strong><br><span style="font-size:11px;color:#666;">Echoiq Ltd</span></td><td style="padding:7px 12px;border:1px solid #eee;">Morgans Spec Buy, TP $1.30</td><td style="padding:7px 12px;border:1px solid #eee;">Binding exclusive 3yr data deal with Advara HeartCare (500k–1m de-identified echo studies). Complements NEDA database; IP ownership retained. FDA-cleared aortic stenosis; Mayo Clinic distribution. Transitioning to commercial revenue phase.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;"><strong>ZIP</strong><br><span style="font-size:11px;color:#666;">Zip Co — GROWTH</span></td><td style="padding:7px 12px;border:1px solid #eee;">UCPS Buy</td><td style="padding:7px 12px;border:1px solid #eee;">85% FY27e profit in the US; Cash EBTDA $260m+ FY26e → $300m+ FY27e; AUD weakness amplifies returns. Trading 11-13x — below re-rated US BNPL peers. Top-quartile US earnings exposure overlooked.</td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;"><strong>SYL</strong><br><span style="font-size:11px;color:#666;">Symal Group</span></td><td style="padding:7px 12px;border:1px solid #eee;">Morgans Buy</td><td style="padding:7px 12px;border:1px solid #eee;">8.7x FY27 EV/EBIT — screens too cheap. Shamrock Civil acquisition (+$16m EBITDA, 13% group); defence + resources exposure; east coast diversification. Leverage remains below 1x ND/EBITDA.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;"><strong>RPL</strong><br><span style="font-size:11px;color:#666;">Regal Partners</span></td><td style="padding:7px 12px;border:1px solid #eee;">UCPS Buy</td><td style="padding:7px 12px;border:1px solid #eee;">Performance fee upside building (most LICs above high-water marks). Trading 7x Cash PER vs domestic peers ~10x. July quarterly pre-release catalyst; consistent net flows. Strong August dividend potential.</td></tr>
+  </tbody>
+</table>
+
+<!-- SECTION 4: BROKER RESEARCH DETAIL -->
+<h2 style="font-size:13px;font-weight:bold;color:#fff;background:#2E75B6;padding:7px 14px;margin:24px -44px 14px -44px;letter-spacing:0.4px;">4 — BROKER RESEARCH DETAIL</h2>
+
+<!-- Barrenjoey -->
+<p style="margin:0 0 6px 0;font-size:13.5px;font-weight:bold;color:#2E75B6;">Barrenjoey — 3 July 2026</p>
+<table style="width:100%;border-collapse:collapse;font-size:12.5px;margin-bottom:20px;">
+  <thead><tr style="background:#3D5A7A;"><td style="padding:8px 12px;color:#fff;font-weight:600;font-size:12px;">Barrenjoey · Anshul Baruah / Mark Malouf · 3 July 2026</td></tr></thead>
+  <tbody>
+    <tr><td style="padding:8px 12px;border:1px solid #eee;"><strong>SGH — OVERWEIGHT (Reinstated) | PT A$55.00:</strong> Brook Campbell-Crawford reinstate OW after restriction. 13.6x FY27 EPS; Boral performance supportive; 9% EPS CAGR FY26-30E; strong balance sheet; limit downside risk into FY26 result.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:8px 12px;border:1px solid #eee;"><strong>ASX — DOWNGRADE TO UNDERWEIGHT | PT A$53.25:</strong> Andrew Adams/Niva Chandrasekaran downgrade on valuation. Trading 25-30% PE premium to market despite expected negative EPS growth. Downside risks to dividend also flagged.</td></tr>
+    <tr><td style="padding:8px 12px;border:1px solid #eee;"><strong>BSL — NEUTRAL (Reinstated) | PT A$29.00:</strong> Brook Campbell-Crawford reinstates after restriction. Likes: 8% NTM FCFE yield, extended lead times, US protectionist policies. Concern: 6x FY27 EV/EBITDA (vs 5yr avg 4.7x), elevated US spreads, softer Aus residential market. Risk/reward balanced.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:8px 12px;border:1px solid #eee;"><strong>NST — Better End to FY26 than Feared:</strong> Daniel Morgan note. New CEO Suresh Vadnagra appointed (from Chair Chaney). KCGM ramp, Hemi progression and asset optimisation the mandate.</td></tr>
+    <tr><td style="padding:8px 12px;border:1px solid #eee;"><strong>OCL — Shock DoD Contract Loss, Material Overreaction | 13x Ex-Cash PE:</strong> Josh Kannourakis calls the sell-off overdone. Quality govtech platform at compelling valuation post de-rating. Entry flag.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:8px 12px;border:1px solid #eee;"><strong>TLX — Open Sesame to US Sites, Almost:</strong> Melissa Benson. Alignment with FDA to advance ProstACT Global Phase 3; IND amendment for US Part 2 submission near. Chief Medical Officer: "excellent outcome." RMD also implied +3.3% offshore.</td></tr>
+    <tr><td style="padding:8px 12px;border:1px solid #eee;"><strong>ANN — Macro Factors: Easing Input Costs + Improving Industrial Activity:</strong> Saul Hadassin. Easing nitrile input cost headwinds and better industrial demand backdrop shift the risk/reward more constructive.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:8px 12px;border:1px solid #eee;"><strong>CSL — US PPTA: Very Strong Core Protein Growth in March:</strong> Saul Hadassin. March PPTA data shows strong plasma-derived protein demand — supportive for CSL's immunoglobulin franchise. CSL implied offshore +2.4% (via GGP).</td></tr>
+    <tr><td style="padding:8px 12px;border:1px solid #eee;"><strong>NIC — The Final Piece of the Puzzle:</strong> Richard Knights. Note not further detailed in the snippet but title suggests a key project/permitting milestone achieved.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:8px 12px;border:1px solid #eee;"><strong>VGN — Fleet Simplified and Positioned for Renewal:</strong> Matt Ryan. Fleet simplification underway; airline positioning for medium-term renewal cycle.</td></tr>
+    <tr><td style="padding:8px 12px;border:1px solid #eee;"><strong>Australia Consumer Sector — "Turf Wars":</strong> Tom Kierath. Sector note on competitive dynamics in Australian consumer; preferences adjusted.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:8px 12px;border:1px solid #eee;"><strong>Insurance &amp; Div Financials — Adjusting Earnings and Preferences:</strong> Andrew Adams. Earnings revisions across the insurance/diversified financials space; preferences updated.</td></tr>
+    <tr><td style="padding:8px 12px;border:1px solid #eee;"><strong>Data &amp; Quant — "The Long and Short of It: Green Shoots and Long Shadows":</strong> Jason Swinbourne. Factor/quant update noting green shoots emerging but longer-term shadows remain (relevant given momentum unwind).</td></tr>
+  </tbody>
+</table>
+
+<!-- Goldman Sachs -->
+<p style="margin:0 0 6px 0;font-size:13.5px;font-weight:bold;color:#2E75B6;">Goldman Sachs — 3 July 2026</p>
+<table style="width:100%;border-collapse:collapse;font-size:12.5px;margin-bottom:20px;">
+  <thead><tr style="background:#3D5A7A;"><td style="padding:8px 12px;color:#fff;font-weight:600;font-size:12px;">GS Australia Sales Desk · Paul Young / Matthew Ross / Michael Snaith · 3 July 2026</td></tr></thead>
+  <tbody>
+    <tr><td style="padding:8px 12px;border:1px solid #eee;"><strong>FMG — DOWNGRADE TO SELL | PT A$18.90:</strong> Paul Young. NAV cut 14% to A$17.5/sh. Rising mine replacement &amp; decarbonisation capex; stretched valuation (~1.1x NAV vs BHP/RIO ~0.9x); FCF yield ~2% vs peers ~4%. GS sees iron ore 61% index potentially below US$95/dmt. FY27/28 EBITDA forecasts -9%/-2% vs consensus. CMRG supply-term standoff is additional near-term overhang.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:8px 12px;border:1px solid #eee;"><strong>Australia FY26 Review — "Carried by Commodities":</strong> Matthew Ross. ASX 200 +6.1% but Resources drove it (+47%); ex-Resources index actually fell -4.6%. Healthcare -36%, Tech -35% worst; Value outperformed Growth by 32%. Banks: $6bn+ of new shorts added. First earnings upgrade cycle since FY22 — led entirely by Resources. Industrials EPS cut 10%; 'Quality' factor worst year in 25 years, down 38%.</td></tr>
+    <tr><td style="padding:8px 12px;border:1px solid #eee;"><strong>RMD — ADDED TO APAC CONVICTION LIST:</strong> Michael Snaith/Davin. Buy thesis: (1) CPAP patient growth from OSA awareness, (2) market share gains from #1 global position, (3) operating margin expansion. GS FY27/28E EPS 3%/8% above consensus; stock trading ~200bps discount to global MedTech peers. RMD implied +3.3% offshore.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:8px 12px;border:1px solid #eee;"><strong>CKF (Collins Food) — BUY:</strong> FY26 investor session takeaways — focus on growth initiatives and labour costs. Buy maintained.</td></tr>
+    <tr><td style="padding:8px 12px;border:1px solid #eee;"><strong>Global Economics — "Disentangling Tech Hiring Headwinds: Higher Rates, Overhiring, and AI":</strong> Read-through to ongoing tech sector wage/employment trends.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:8px 12px;border:1px solid #eee;"><strong>Australia Trade:</strong> Goods trade balance returned to deficit — macro context note.</td></tr>
+    <tr><td style="padding:8px 12px;border:1px solid #eee;"><strong>Corporate Access Upcoming:</strong> DNL (22 Jul virtual); PWH (24 Aug Sydney); CCL (24 Aug Sydney); AX1 (25 Aug Sydney); SGM (19 Aug Melbourne).</td></tr>
+  </tbody>
+</table>
+
+<!-- Morgans -->
+<p style="margin:0 0 6px 0;font-size:13.5px;font-weight:bold;color:#2E75B6;">Morgans — 3 July 2026</p>
+<table style="width:100%;border-collapse:collapse;font-size:12.5px;margin-bottom:20px;">
+  <thead><tr style="background:#3D5A7A;"><td style="padding:8px 12px;color:#fff;font-weight:600;font-size:12px;">Morgans · Joe Gallagher / Matthew Dearlove · 3 July 2026</td></tr></thead>
+  <tbody>
+    <tr><td style="padding:8px 12px;border:1px solid #eee;"><strong>PXA (PEXA) — IPART 20% Revenue Cut Draft:</strong> Draft proposes 20% reduction; A$70m impact (17% group revenue, 20% Australian business revenue). Above high-end estimates (Morgans expected ~15%). PXA seeking 4-year phase-in. Consultation period ongoing. Market Call 9:30am.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:8px 12px;border:1px solid #eee;"><strong>FMG — CMRG Delivery Ban from 15 July:</strong> Mills/traders told not to take delivery of FMG's Super Special Fines and Fortune Fines at Chinese ports as supply-term talks sour. Mirrors BHP standoff (settled April). FMG valuation "middle of the road" but iron ore drifting toward low end of range. Negative read.</td></tr>
+    <tr><td style="padding:8px 12px;border:1px solid #eee;"><strong>IMR (Imricor) — SPECULATIVE BUY | PT A$2.94 (from $2.61):</strong> FDA 510(k) clearance for NorthStar mapping + Vision-MR diagnostic catheter across all ages. Opens 250+ US children's hospitals; ~200-250k procedure TAM; US$250m TAM at US$1k/consumable. EPS cuts -12/-21/-52% FY26-28 cost-driven (not demand). Plenty of catalysts ahead: atrial flutter approval Q4, EU VT enrolment, Middle East sales.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:8px 12px;border:1px solid #eee;"><strong>EIQ (Echoiq) — SPECULATIVE BUY | PT A$1.30:</strong> Binding exclusive 3yr deal with Advara HeartCare (500k-1m de-identified echo studies + 3yr extension option). IP retained. Complements NEDA database. FDA-cleared for aortic stenosis; Mayo Clinic distribution ahead of HF clearance. Transitioning to commercial revenue story.</td></tr>
+    <tr><td style="padding:8px 12px;border:1px solid #eee;"><strong>SYL (Symal Group) — BUY:</strong> Model updated for Shamrock Civil acquisition (+~$16m EBITDA; 13% group; 3.2x EV/EBITDA — attractive). 8.7x FY27 EV/EBIT screens cheaply. Defence + resources exposure; east coast geographic diversification. Leverage stays &lt;1x. EPS accretive in first full year.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:8px 12px;border:1px solid #eee;"><strong>Classifieds (CAR/REA/SEK) — ALL BUY, ~6% EPS Downgrade FY27/28:</strong> Listings volumes softening heading into August reporting. CAR: dealer inventory normalising, private -30%; REA: Sydney -7.4%, Melbourne -5.2% new listings; SEK: job ads -4.5% in May. Yield growth story intact. Buy retained all three.</td></tr>
+    <tr><td style="padding:8px 12px;border:1px solid #eee;"><strong>RMD (ResMed) — BUY | PT A$41.72:</strong> De-rated to ~16x forward (lowest since post-GFC) but consensus still forecasting double-digit EPS growth. GLP-1 fears, Philips re-entry risk (2027), oral OSA therapy data. Industry data not yet showing material demand deterioration. No forecast changes; Buy maintained. RMD implied +3.3% offshore.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:8px 12px;border:1px solid #eee;"><strong>AVH (Avita Medical) — MOVE TO HOLD | PT A$1.35:</strong> MAC reimbursement overhang cleared; early commercial recovery underway. Stock has run to target price — valuation call. Hold with same TP. Re-rate faster than evidence at this point.</td></tr>
+    <tr><td style="padding:8px 12px;border:1px solid #eee;"><strong>MMA (Maronan Metals) — INITIATION SPECULATIVE BUY | PT A$0.66:</strong> Maronan polymetallic project NW Queensland (122Moz silver, 2Mt lead, 271kt copper, 0.76Moz gold). MDL approved Sep 2025. PEA NPV $377m; 10yr mine life on 22% of resource. AISC A$30.18/oz AgEq. PFS drill program next catalyst. Funded to PFS completion.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:8px 12px;border:1px solid #eee;"><strong>MAP (Microba Life Sciences) — SPECULATIVE BUY | PT A$0.12 (from $0.15):</strong> $5m institutional placement (inc Sonic Healthcare). Failed PE approach at premium to undisturbed market cap. PT cut on dilution; path to profitability shorter. SPECULATIVE BUY retained.</td></tr>
+    <tr><td style="padding:8px 12px;border:1px solid #eee;"><strong>AI/Neocloud Read-Through (MP1, Firmus, SHAZ):</strong> Semianalysis piece on Meta compute — demand tailwind for neoclouds not overcapacity; Meta 2027 capex "shockingly high" with most additions through third parties. Contract structure (tenor/firmness) is the key vulnerability, not headline demand.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:8px 12px;border:1px solid #eee;"><strong>Corporate Access Upcoming:</strong> SVL (13 Jul virtual); Mini Coal Conference NHC/WHC/SMR (29 Jul); Mini Uranium Conference DYL/PDN/AEU (30 Jul); NXG 1H26 results (6 Aug); AOV FY26 results (12 Aug).</td></tr>
+  </tbody>
+</table>
+
+<!-- UCPS -->
+<p style="margin:0 0 6px 0;font-size:13.5px;font-weight:bold;color:#2E75B6;">UCPS (Unified Capital Partners) — 3 July 2026</p>
+<table style="width:100%;border-collapse:collapse;font-size:12.5px;margin-bottom:20px;">
+  <thead><tr style="background:#3D5A7A;"><td style="padding:8px 12px;color:#fff;font-weight:600;font-size:12px;">UCPS Sales Desk · 3 July 2026</td></tr></thead>
+  <tbody>
+    <tr><td style="padding:8px 12px;border:1px solid #eee;"><strong>QOR (Qoria) — Scheme Vote CARRIED:</strong> Scheme Meeting completed; sole resolution voted in favour. Remaining CPs: court approval, ASX approval, capital raise receipt. Second Court date 7 July. Last day of trade: 8 July. Implementation and Aura CDI trading: 17 July. UCPS reiterates Buy; TP $0.75.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:8px 12px;border:1px solid #eee;"><strong>ABB (Aussie Broadband) — Trading Update In-Line:</strong> AGL, More, Digital Sense, Nexgen, Voice transitions combine for $28m EBITDA step-up; ~$210m annualised EBITDA on 2H26 run rate. Further upside from pricing, efficiencies, business &amp; wholesale.</td></tr>
+    <tr><td style="padding:8px 12px;border:1px solid #eee;"><strong>ZIP — BUY:</strong> 85% FY27e profit in US; $300m+ FY27e Cash EBTDA; AUD weakness amplifies. 11x FY27e — below re-rated US sector. Top-quartile US earnings exposure underappreciated by market. — <span style="color:#2E75B6;">GROWTH</span></td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:8px 12px;border:1px solid #eee;"><strong>MGH (Maas Group) — BUY:</strong> Firmus/NVIDIA revenue-share deal for Indonesia compute (~US$3bn annualised when operational) could add ~$4bn to Firmus valuation. Further contract news (Tasmania) possible. Ongoing AI/data centre momentum read-through.</td></tr>
+    <tr><td style="padding:8px 12px;border:1px solid #eee;"><strong>WGN (Wagners) — BUY:</strong> Brisbane rainfall mild in June; El Niño conditions supportive for FY27. 2H26 guidance conservative (EBIT $27-31m vs 1H26 $35m). CFT capacity expanding (3 new pultrusion machines, +18k power poles). Brisbane Olympics contracts potential catalyst.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:8px 12px;border:1px solid #eee;"><strong>RPL (Regal Partners) — BUY:</strong> Performance fee upside building; most LICs above high-water marks. July quarterly pre-release approaching. 7x Cash PER vs peers ~10x. Potential strong August dividend + capital management.</td></tr>
+    <tr><td style="padding:8px 12px;border:1px solid #eee;"><strong>VGL (Vista Group) — BUY:</strong> CEO/CFO briefing held; UCPS view and insights available on request. — <span style="color:#7F7F7F;">PA</span></td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:8px 12px;border:1px solid #eee;"><strong>Fund Manager Favourites (Ex-50):</strong> SFR and ALQ tied most popular; FPH and RMD tied third. SFR biggest monthly gain; 360 and REA lost popularity. <strong>Ex-100:</strong> BRG top, then ABB, then MP1/ZIP tied. AAI and CSC strongest gains. <strong>Ex-200:</strong> GNP most popular; SKS second; IPG/WGN tied third; SHA and VGL biggest monthly increases.</td></tr>
+  </tbody>
+</table>
+
+<!-- BOEQ -->
+<p style="margin:0 0 6px 0;font-size:13.5px;font-weight:bold;color:#2E75B6;">Blue Ocean Equities (BOEQ) — 3 July 2026</p>
+<table style="width:100%;border-collapse:collapse;font-size:12.5px;margin-bottom:20px;">
+  <thead><tr style="background:#3D5A7A;"><td style="padding:8px 12px;color:#fff;font-weight:600;font-size:12px;">BOEQ · Scott Calcraft / Farzin Azarm (Mizuho) · 3 July 2026</td></tr></thead>
+  <tbody>
+    <tr><td style="padding:8px 12px;border:1px solid #eee;"><strong>OSL (OncoSil Medical) — +38%:</strong> Filed for FDA approval of targeted radiation device for cholangiocarcinoma (bile duct cancer). Significant regulatory milestone for the cancer treatment device.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:8px 12px;border:1px solid #eee;"><strong>MXO (Motio) — +15%:</strong> FY26 trading update presented to investors. — <span style="color:#5B9BD5;">AU Watchlist</span></td></tr>
+    <tr><td style="padding:8px 12px;border:1px solid #eee;"><strong>PXA (PEXA) — +3.8%:</strong> IPART proposes 20% regulated revenue reduction (see Morgans section above).</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:8px 12px;border:1px solid #eee;"><strong>ALX (Atlas Arteria) — +0.2%:</strong> Directors recommend shareholders reject the takeover offer. IFM increased to 57.14% (substantial notice 2/7). — <span style="color:#5B9BD5;">AU Watchlist</span></td></tr>
+    <tr><td style="padding:8px 12px;border:1px solid #eee;"><strong>SUN (Suncorp) — +1.5%:</strong> Reinsurance renewal costs increase with new aggregate protection added. Size of increase and structure to monitor for FY26 margins.</td></tr>
+  </tbody>
+</table>
+
+<!-- SECTION 5: OVERNIGHT WATCHLIST HITS -->
+<h2 style="font-size:13px;font-weight:bold;color:#fff;background:#2E75B6;padding:7px 14px;margin:24px -44px 14px -44px;letter-spacing:0.4px;">5 — OVERNIGHT WATCHLIST HITS</h2>
+
+<table style="width:100%;border-collapse:collapse;font-size:12.5px;margin-bottom:16px;">
+  <thead><tr style="background:#D5E8F0;border:1px solid #B4CFE0;">
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Stock</td>
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Portfolio</td>
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Move/Event</td>
+  </tr></thead>
+  <tbody>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;"><strong>BHP</strong></td><td style="padding:7px 12px;border:1px solid #eee;color:#2E75B6;">GROWTH</td><td style="padding:7px 12px;border:1px solid #eee;">+1.0% implied offshore. Filed permit to reopen Cerro Colorado copper mine ($1.5bn). Iron ore +0.9% to US$98.4/t. LME Index +0.1%.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;"><strong>WDS</strong></td><td style="padding:7px 12px;border:1px solid #eee;color:#2E75B6;">GROWTH</td><td style="padding:7px 12px;border:1px solid #eee;">+0.7% implied offshore. Oil flat. B* note on VGN fleet (airline) is tangential read. Monitor crack spreads.</td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;"><strong>VEA</strong></td><td style="padding:7px 12px;border:1px solid #eee;color:#2E75B6;">GROWTH</td><td style="padding:7px 12px;border:1px solid #eee;">Minas 211 crack -3.6% to US$31.5/bbl. Singapore Jet Fuel -3.5% to US$110.8/bbl. Ongoing margin headwind. Watch at open.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;"><strong>RMD</strong></td><td style="padding:7px 12px;border:1px solid #eee;color:#5B9BD5;">AU Watchlist</td><td style="padding:7px 12px;border:1px solid #eee;">+3.3% implied offshore. GS adds to APAC CL; Morgans reiterates BUY $41.72. Competes with GLP-1 OSA therapy risk but de-rated to 16x forward — value emerging.</td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;"><strong>AMC</strong></td><td style="padding:7px 12px;border:1px solid #eee;color:#5B9BD5;">AU Watchlist</td><td style="padding:7px 12px;border:1px solid #eee;">+4.1% implied offshore (B* implied moves). No specific news — follow through from prior session defensive bid.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;"><strong>ALX</strong></td><td style="padding:7px 12px;border:1px solid #eee;color:#5B9BD5;">AU Watchlist</td><td style="padding:7px 12px;border:1px solid #eee;">Directors recommend rejection of takeover offer (+0.2%). IFM Investors increased to 57.14% (substantial notice 02/07). Watch for counter-bid developments.</td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;"><strong>VGL</strong></td><td style="padding:7px 12px;border:1px solid #eee;color:#7F7F7F;">PA</td><td style="padding:7px 12px;border:1px solid #eee;">UCPS hosted CEO/CFO briefing. UCPS views available on request. SHA — AI chip read-through (Semianalysis Meta compute note); monitor.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;"><strong>LNW / ALL</strong></td><td style="padding:7px 12px;border:1px solid #eee;color:#7F7F7F;">PA</td><td style="padding:7px 12px;border:1px solid #eee;">No specific news. Semi rout indirectly negative for tech-adjacent gaming hardware. Monitor at open.</td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;"><strong>ZIP</strong></td><td style="padding:7px 12px;border:1px solid #eee;color:#2E75B6;">GROWTH</td><td style="padding:7px 12px;border:1px solid #eee;">UCPS buy; AUD/USD +0.4% to 0.692 reduces the USD earnings amplification slightly. 85% US earnings still compelling at 11x FY27e.</td></tr>
+  </tbody>
+</table>
+
+<!-- SECTION 6: SUBSTANTIALS & REGISTER CHANGES -->
+<h2 style="font-size:13px;font-weight:bold;color:#fff;background:#2E75B6;padding:7px 14px;margin:24px -44px 14px -44px;letter-spacing:0.4px;">6 — SUBSTANTIALS &amp; REGISTER CHANGES</h2>
+
+<table style="width:100%;border-collapse:collapse;font-size:12.5px;margin-bottom:16px;">
+  <thead><tr style="background:#D5E8F0;border:1px solid #B4CFE0;">
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Ticker</td>
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Entity</td>
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Type</td>
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">From → To</td>
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Date</td>
+  </tr></thead>
+  <tbody>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;"><strong>ALQ</strong></td><td style="padding:7px 12px;border:1px solid #eee;">Blackrock</td><td style="padding:7px 12px;border:1px solid #eee;">Become</td><td style="padding:7px 12px;border:1px solid #eee;">— → 5.04%</td><td style="padding:7px 12px;border:1px solid #eee;">02/07/26</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;"><strong>ALX</strong> ← <span style="font-size:11px;color:#5B9BD5;">AU Watchlist</span></td><td style="padding:7px 12px;border:1px solid #eee;">IFM Investors</td><td style="padding:7px 12px;border:1px solid #eee;">Increase</td><td style="padding:7px 12px;border:1px solid #eee;">54.18% → 57.14%</td><td style="padding:7px 12px;border:1px solid #eee;">02/07/26</td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;"><strong>APZ</strong></td><td style="padding:7px 12px;border:1px solid #eee;">United Super</td><td style="padding:7px 12px;border:1px solid #eee;">Become</td><td style="padding:7px 12px;border:1px solid #eee;">— → 5.10%</td><td style="padding:7px 12px;border:1px solid #eee;">02/07/26</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;"><strong>BMC</strong></td><td style="padding:7px 12px;border:1px solid #eee;">Victor Smorgon</td><td style="padding:7px 12px;border:1px solid #eee;">Increase</td><td style="padding:7px 12px;border:1px solid #eee;">9.99% → 11.18%</td><td style="padding:7px 12px;border:1px solid #eee;">02/07/26</td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;"><strong>COH</strong></td><td style="padding:7px 12px;border:1px solid #eee;">Blackrock</td><td style="padding:7px 12px;border:1px solid #eee;">Increase</td><td style="padding:7px 12px;border:1px solid #eee;">7.09% → 7.68%</td><td style="padding:7px 12px;border:1px solid #eee;">02/07/26</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;"><strong>ELV</strong></td><td style="padding:7px 12px;border:1px solid #eee;">Bank of NY Mellon</td><td style="padding:7px 12px;border:1px solid #eee;">Increase</td><td style="padding:7px 12px;border:1px solid #eee;">18.88% → 20.02%</td><td style="padding:7px 12px;border:1px solid #eee;">02/07/26</td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;"><strong>PRU</strong></td><td style="padding:7px 12px;border:1px solid #eee;">AustralianSuper</td><td style="padding:7px 12px;border:1px solid #eee;">Increase</td><td style="padding:7px 12px;border:1px solid #eee;">7.30% → 8.31%</td><td style="padding:7px 12px;border:1px solid #eee;">02/07/26</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;"><strong>RPL</strong></td><td style="padding:7px 12px;border:1px solid #eee;">RMPL Investments</td><td style="padding:7px 12px;border:1px solid #eee;">Decrease</td><td style="padding:7px 12px;border:1px solid #eee;">6.60% → 5.49%</td><td style="padding:7px 12px;border:1px solid #eee;">02/07/26</td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;"><strong>SFY</strong></td><td style="padding:7px 12px;border:1px solid #eee;">Netwealth</td><td style="padding:7px 12px;border:1px solid #eee;">Increase</td><td style="padding:7px 12px;border:1px solid #eee;">12.83% → 13.21%</td><td style="padding:7px 12px;border:1px solid #eee;">02/07/26</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;"><strong>NUF</strong></td><td style="padding:7px 12px;border:1px solid #eee;">Allan Gray</td><td style="padding:7px 12px;border:1px solid #eee;">Decrease</td><td style="padding:7px 12px;border:1px solid #eee;">16.26% → 15.25%</td><td style="padding:7px 12px;border:1px solid #eee;">02/07/26</td></tr>
+  </tbody>
+</table>
+
+<!-- SECTION 7: EX-DIVIDENDS -->
+<h2 style="font-size:13px;font-weight:bold;color:#fff;background:#2E75B6;padding:7px 14px;margin:24px -44px 14px -44px;letter-spacing:0.4px;">7 — ASX EX-DIVIDENDS</h2>
+<p style="margin:0 0 12px 0;font-size:12.5px;color:#555;">No ex-dividend dates flagged for Friday 3 July 2026 in today's broker research. Macquarie ANZ Essentials (body unavailable in minimal format) may contain additional detail — check directly if relevant.</p>
+
+<!-- SECTION 8: TODAY'S SCHEDULE -->
+<h2 style="font-size:13px;font-weight:bold;color:#fff;background:#2E75B6;padding:7px 14px;margin:24px -44px 14px -44px;letter-spacing:0.4px;">8 — TODAY'S SCHEDULE</h2>
+
+<table style="width:100%;border-collapse:collapse;font-size:12.5px;margin-bottom:16px;">
+  <thead><tr style="background:#D5E8F0;border:1px solid #B4CFE0;">
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Time (AEST)</td>
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Event</td>
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Source</td>
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Notes</td>
+  </tr></thead>
+  <tbody>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">08:00</td><td style="padding:7px 12px;border:1px solid #eee;">Pick up gun safes (bring towels)</td><td style="padding:7px 12px;border:1px solid #eee;">TickTick</td><td style="padding:7px 12px;border:1px solid #eee;">Personal reminder</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">08:30</td><td style="padding:7px 12px;border:1px solid #eee;">🎂 Birthday: Daniel Zaffino</td><td style="padding:7px 12px;border:1px solid #eee;">Personal Events</td><td style="padding:7px 12px;border:1px solid #eee;">Send a message</td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">09:30</td><td style="padding:7px 12px;border:1px solid #eee;">ASX Open / PXA Market Call</td><td style="padding:7px 12px;border:1px solid #eee;">Morgans</td><td style="padding:7px 12px;border:1px solid #eee;">PXA IPART draft — register via Morgans link. IPART 20% cut — market call on implications.</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">~09:30</td><td style="padding:7px 12px;border:1px solid #eee;">AU S&amp;P Global Services PMI / Composite PMI</td><td style="padding:7px 12px;border:1px solid #eee;">Macro Data</td><td style="padding:7px 12px;border:1px solid #eee;">First Friday data point post-NFP miss; RBA watch</td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">~10:30</td><td style="padding:7px 12px;border:1px solid #eee;">Toby Swimming</td><td style="padding:7px 12px;border:1px solid #eee;">Personal</td><td style="padding:7px 12px;border:1px solid #eee;">Until 11:30</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">★ 13:30</td><td style="padding:7px 12px;border:1px solid #eee;font-weight:bold;">EAM Operations — Daily Huddle</td><td style="padding:7px 12px;border:1px solid #eee;">Work Calendar</td><td style="padding:7px 12px;border:1px solid #eee;"><strong>Teams:</strong> Meeting ID 480 463 720 726 07 · Passcode: CX2Dw9Pf<br><a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_N2E3ZmQ4MjMtZjczMS00MWQyLWIwNzUtOWYxZjJiODE5MTJj%40thread.v2/0?context=%7b%22Tid%22%3a%223cacc45d-21da-4df9-a09e-619eda923971%22%2c%22Oid%22%3a%223009ced5-375d-4810-9a3c-e3631864f2e5%22%7d" style="font-size:11px;color:#2E75B6;">Join Teams Meeting</a></td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">19:00</td><td style="padding:7px 12px;border:1px solid #eee;">Check Qantas Credit Card payments</td><td style="padding:7px 12px;border:1px solid #eee;">TickTick</td><td style="padding:7px 12px;border:1px solid #eee;">Google, Replit, Claude, Vercel, Supabase, Railway</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">20:30</td><td style="padding:7px 12px;border:1px solid #eee;">Monitor sector news &amp; read-throughs</td><td style="padding:7px 12px;border:1px solid #eee;">TickTick</td><td style="padding:7px 12px;border:1px solid #eee;">Leverage APIs + Google News for portfolio names</td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">US CLOSED</td><td style="padding:7px 12px;border:1px solid #eee;">US Markets — Independence Day Holiday (4 July)</td><td style="padding:7px 12px;border:1px solid #eee;">US Holiday</td><td style="padding:7px 12px;border:1px solid #eee;">No US trading; reduced global volume expected</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">TBC</td><td style="padding:7px 12px;border:1px solid #eee;">NZ ANZ Consumer Confidence</td><td style="padding:7px 12px;border:1px solid #eee;">Macro Data NZ</td><td style="padding:7px 12px;border:1px solid #eee;">Read-through for NZME (NZM, AU Watchlist)</td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">TBC</td><td style="padding:7px 12px;border:1px solid #eee;">China RatingDog Services PMI / Composite PMI</td><td style="padding:7px 12px;border:1px solid #eee;">China Macro</td><td style="padding:7px 12px;border:1px solid #eee;">Read-through for BHP, S32, CIA commodity thesis</td></tr>
+  </tbody>
+</table>
+
+<!-- SECTION 9: MARKET ENVIRONMENT -->
+<h2 style="font-size:13px;font-weight:bold;color:#fff;background:#2E75B6;padding:7px 14px;margin:24px -44px 14px -44px;letter-spacing:0.4px;">9 — MARKET ENVIRONMENT</h2>
+
+<table style="width:100%;border-collapse:collapse;font-size:12.5px;margin-bottom:16px;">
+  <thead><tr style="background:#D5E8F0;border:1px solid #B4CFE0;">
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Indicator</td>
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Level</td>
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Change</td>
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Status</td>
+  </tr></thead>
+  <tbody>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">S&P 500</td><td style="padding:7px 12px;border:1px solid #eee;">7,483</td><td style="padding:7px 12px;border:1px solid #eee;">Unch</td><td style="padding:7px 12px;border:1px solid #eee;"><span style="display:inline-block;border-radius:12px;padding:3px 11px;font-size:11px;font-weight:600;background:#FEF9C3;color:#713F12;">Consolidating</span></td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">Nasdaq 100</td><td style="padding:7px 12px;border:1px solid #eee;">25,833</td><td style="padding:7px 12px;border:1px solid #eee;">-0.8%</td><td style="padding:7px 12px;border:1px solid #eee;"><span style="display:inline-block;border-radius:12px;padding:3px 11px;font-size:11px;font-weight:600;background:#FEE2E2;color:#991B1B;">Falling</span></td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">Russell 2000</td><td style="padding:7px 12px;border:1px solid #eee;">2,996</td><td style="padding:7px 12px;border:1px solid #eee;">-0.5%</td><td style="padding:7px 12px;border:1px solid #eee;"><span style="display:inline-block;border-radius:12px;padding:3px 11px;font-size:11px;font-weight:600;background:#FEF9C3;color:#713F12;">Consolidating</span></td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">ASX SPI</td><td style="padding:7px 12px;border:1px solid #eee;">8,754</td><td style="padding:7px 12px;border:1px solid #eee;">+0.5%</td><td style="padding:7px 12px;border:1px solid #eee;"><span style="display:inline-block;border-radius:12px;padding:3px 11px;font-size:11px;font-weight:600;background:#D1FAE5;color:#065F46;">Rising</span></td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">Gold</td><td style="padding:7px 12px;border:1px solid #eee;">US$4,121/oz</td><td style="padding:7px 12px;border:1px solid #eee;">+2.2%</td><td style="padding:7px 12px;border:1px solid #eee;"><span style="display:inline-block;border-radius:12px;padding:3px 11px;font-size:11px;font-weight:600;background:#D1FAE5;color:#065F46;">Rising</span></td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">Brent Oil</td><td style="padding:7px 12px;border:1px solid #eee;">US$71.6/bbl</td><td style="padding:7px 12px;border:1px solid #eee;">Unch</td><td style="padding:7px 12px;border:1px solid #eee;"><span style="display:inline-block;border-radius:12px;padding:3px 11px;font-size:11px;font-weight:600;background:#F3F4F6;color:#374151;">Neutral</span></td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">Iron Ore</td><td style="padding:7px 12px;border:1px solid #eee;">US$98.4/t</td><td style="padding:7px 12px;border:1px solid #eee;">+0.9%</td><td style="padding:7px 12px;border:1px solid #eee;"><span style="display:inline-block;border-radius:12px;padding:3px 11px;font-size:11px;font-weight:600;background:#FEF9C3;color:#713F12;">Consolidating</span></td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">Minas 211 Crack</td><td style="padding:7px 12px;border:1px solid #eee;">US$31.5/bbl</td><td style="padding:7px 12px;border:1px solid #eee;">-3.6%</td><td style="padding:7px 12px;border:1px solid #eee;"><span style="display:inline-block;border-radius:12px;padding:3px 11px;font-size:11px;font-weight:600;background:#FEE2E2;color:#991B1B;">Falling</span></td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">AUD/USD</td><td style="padding:7px 12px;border:1px solid #eee;">0.692</td><td style="padding:7px 12px;border:1px solid #eee;">+0.4%</td><td style="padding:7px 12px;border:1px solid #eee;"><span style="display:inline-block;border-radius:12px;padding:3px 11px;font-size:11px;font-weight:600;background:#D1FAE5;color:#065F46;">Rising</span></td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">US 10Y</td><td style="padding:7px 12px;border:1px solid #eee;">4.48%</td><td style="padding:7px 12px;border:1px solid #eee;">Unch</td><td style="padding:7px 12px;border:1px solid #eee;"><span style="display:inline-block;border-radius:12px;padding:3px 11px;font-size:11px;font-weight:600;background:#F3F4F6;color:#374151;">Neutral</span></td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">AU 10Y</td><td style="padding:7px 12px;border:1px solid #eee;">4.82%</td><td style="padding:7px 12px;border:1px solid #eee;">+3bps</td><td style="padding:7px 12px;border:1px solid #eee;"><span style="display:inline-block;border-radius:12px;padding:3px 11px;font-size:11px;font-weight:600;background:#FEF3C7;color:#92400E;">At Highs</span></td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">DXY</td><td style="padding:7px 12px;border:1px solid #eee;">101</td><td style="padding:7px 12px;border:1px solid #eee;">-0.5%</td><td style="padding:7px 12px;border:1px solid #eee;"><span style="display:inline-block;border-radius:12px;padding:3px 11px;font-size:11px;font-weight:600;background:#FEE2E2;color:#991B1B;">Falling</span></td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">VIX</td><td style="padding:7px 12px;border:1px solid #eee;">~est elevated</td><td style="padding:7px 12px;border:1px solid #eee;">Rising</td><td style="padding:7px 12px;border:1px solid #eee;"><span style="display:inline-block;border-radius:12px;padding:3px 11px;font-size:11px;font-weight:600;background:#FEE2E2;color:#991B1B;">Elevated</span></td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">Spodumene</td><td style="padding:7px 12px;border:1px solid #eee;">US$2,365/t</td><td style="padding:7px 12px;border:1px solid #eee;">-0.2%</td><td style="padding:7px 12px;border:1px solid #eee;"><span style="display:inline-block;border-radius:12px;padding:3px 11px;font-size:11px;font-weight:600;background:#F3F4F6;color:#374151;">Neutral</span></td></tr>
+  </tbody>
+</table>
+
+<!-- SECTION 10A: MACRO CALENDAR -->
+<h2 style="font-size:13px;font-weight:bold;color:#fff;background:#2E75B6;padding:7px 14px;margin:24px -44px 14px -44px;letter-spacing:0.4px;">10A — MACRO CALENDAR — WEEK AHEAD</h2>
+
+<table style="width:100%;border-collapse:collapse;font-size:12.5px;margin-bottom:16px;">
+  <thead><tr style="background:#D5E8F0;border:1px solid #B4CFE0;">
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Date</td>
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Event</td>
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Impact</td>
+  </tr></thead>
+  <tbody>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">Fri 3 Jul</td><td style="padding:7px 12px;border:1px solid #eee;">AU S&amp;P Global Services / Composite PMI</td><td style="padding:7px 12px;border:1px solid #eee;"><span style="display:inline-block;border-radius:12px;padding:3px 11px;font-size:11px;font-weight:600;background:#FEF3C7;color:#92400E;">MED-HIGH</span></td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">Fri 3 Jul</td><td style="padding:7px 12px;border:1px solid #eee;">China RatingDog Services / Composite PMI</td><td style="padding:7px 12px;border:1px solid #eee;"><span style="display:inline-block;border-radius:12px;padding:3px 11px;font-size:11px;font-weight:600;background:#FEF3C7;color:#92400E;">MED-HIGH</span></td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">Fri 4 Jul</td><td style="padding:7px 12px;border:1px solid #eee;">US Markets CLOSED — Independence Day</td><td style="padding:7px 12px;border:1px solid #eee;"><span style="display:inline-block;border-radius:12px;padding:3px 11px;font-size:11px;font-weight:600;background:#F3F4F6;color:#374151;">MED</span></td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">Mon 7 Jul</td><td style="padding:7px 12px;border:1px solid #eee;">NATO Summit (Turkey) begins; QOR Second Court Hearing</td><td style="padding:7px 12px;border:1px solid #eee;"><span style="display:inline-block;border-radius:12px;padding:3px 11px;font-size:11px;font-weight:600;background:#FEE2E2;color:#991B1B;">HIGH</span></td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">Mon 7 Jul</td><td style="padding:7px 12px;border:1px solid #eee;">US ISM Services PMI; FOMC Minutes</td><td style="padding:7px 12px;border:1px solid #eee;"><span style="display:inline-block;border-radius:12px;padding:3px 11px;font-size:11px;font-weight:600;background:#FEE2E2;color:#991B1B;">HIGH</span></td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">Tue 8 Jul</td><td style="padding:7px 12px;border:1px solid #eee;">QOR Last Day of Trade (if Scheme approved)</td><td style="padding:7px 12px;border:1px solid #eee;"><span style="display:inline-block;border-radius:12px;padding:3px 11px;font-size:11px;font-weight:600;background:#FEF3C7;color:#92400E;">MED-HIGH</span></td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">Fri 11 Jul</td><td style="padding:7px 12px;border:1px solid #eee;">US Q2 Earnings Season Kicks Off (Delta DAL); Warsh Fed appointees announced</td><td style="padding:7px 12px;border:1px solid #eee;"><span style="display:inline-block;border-radius:12px;padding:3px 11px;font-size:11px;font-weight:600;background:#FEE2E2;color:#991B1B;">HIGH</span></td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">Jul 6-8</td><td style="padding:7px 12px;border:1px solid #eee;">UN Global Dialogue on AI Governance — Geneva</td><td style="padding:7px 12px;border:1px solid #eee;"><span style="display:inline-block;border-radius:12px;padding:3px 11px;font-size:11px;font-weight:600;background:#FEF9C3;color:#713F12;">MED</span></td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">Mid-Jul</td><td style="padding:7px 12px;border:1px solid #eee;">Platform Quarterlies: NWL (16 Jul), HUB (21 Jul)</td><td style="padding:7px 12px;border:1px solid #eee;"><span style="display:inline-block;border-radius:12px;padding:3px 11px;font-size:11px;font-weight:600;background:#FEF3C7;color:#92400E;">MED-HIGH</span></td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">15 Jul</td><td style="padding:7px 12px;border:1px solid #eee;">CMRG delivery ban on FMG SSF/Fortune Fines takes effect</td><td style="padding:7px 12px;border:1px solid #eee;"><span style="display:inline-block;border-radius:12px;padding:3px 11px;font-size:11px;font-weight:600;background:#FEE2E2;color:#991B1B;">HIGH</span></td></tr>
+  </tbody>
+</table>
+
+<!-- SECTION 10B: PORTFOLIO EVENTS -->
+<h2 style="font-size:13px;font-weight:bold;color:#fff;background:#2E75B6;padding:7px 14px;margin:24px -44px 14px -44px;letter-spacing:0.4px;">10B — PORTFOLIO EVENTS — UPCOMING</h2>
+
+<table style="width:100%;border-collapse:collapse;font-size:12.5px;margin-bottom:16px;">
+  <thead><tr style="background:#D5E8F0;border:1px solid #B4CFE0;">
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Date</td>
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Stock</td>
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Event</td>
+    <td style="padding:8px 12px;font-weight:600;font-size:12px;">Portfolio</td>
+  </tr></thead>
+  <tbody>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">7 Jul</td><td style="padding:7px 12px;border:1px solid #eee;"><strong>QOR</strong></td><td style="padding:7px 12px;border:1px solid #eee;">Second Court Hearing (Scheme approval)</td><td style="padding:7px 12px;border:1px solid #eee;color:#7F7F7F;">PA</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">8 Jul</td><td style="padding:7px 12px;border:1px solid #eee;"><strong>QOR</strong></td><td style="padding:7px 12px;border:1px solid #eee;">Last Day of Trade (if Scheme implemented)</td><td style="padding:7px 12px;border:1px solid #eee;color:#7F7F7F;">PA</td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">13 Jul</td><td style="padding:7px 12px;border:1px solid #eee;"><strong>SVL</strong></td><td style="padding:7px 12px;border:1px solid #eee;">Network Presentation — Morgans (virtual 10:30am)</td><td style="padding:7px 12px;border:1px solid #eee;color:#5B9BD5;">AU Watchlist</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">16 Jul</td><td style="padding:7px 12px;border:1px solid #eee;"><strong>NWL</strong></td><td style="padding:7px 12px;border:1px solid #eee;">Quarterly Update</td><td style="padding:7px 12px;border:1px solid #eee;color:#5B9BD5;">AU Watchlist</td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">17 Jul</td><td style="padding:7px 12px;border:1px solid #eee;"><strong>QOR/Aura</strong></td><td style="padding:7px 12px;border:1px solid #eee;">QOR implementation; Aura CDIs begin trading</td><td style="padding:7px 12px;border:1px solid #eee;color:#7F7F7F;">PA</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">21 Jul</td><td style="padding:7px 12px;border:1px solid #eee;"><strong>HUB</strong></td><td style="padding:7px 12px;border:1px solid #eee;">Quarterly Update (Morgans event)</td><td style="padding:7px 12px;border:1px solid #eee;color:#2E75B6;">GROWTH</td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">22 Jul</td><td style="padding:7px 12px;border:1px solid #eee;"><strong>DNL</strong></td><td style="padding:7px 12px;border:1px solid #eee;">GS Virtual Event — CEO, CFO, IR (1pm AEST)</td><td style="padding:7px 12px;border:1px solid #eee;color:#5B9BD5;">AU Watchlist</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">29 Jul</td><td style="padding:7px 12px;border:1px solid #eee;"><strong>NHC/WHC/SMR</strong></td><td style="padding:7px 12px;border:1px solid #eee;">Mini Coal Conference — Morgans (virtual)</td><td style="padding:7px 12px;border:1px solid #eee;">—</td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">30 Jul</td><td style="padding:7px 12px;border:1px solid #eee;"><strong>DYL/PDN/AEU</strong></td><td style="padding:7px 12px;border:1px solid #eee;">Mini Uranium Conference — Morgans (virtual)</td><td style="padding:7px 12px;border:1px solid #eee;">—</td></tr>
+    <tr style="background:#FAFAFA;"><td style="padding:7px 12px;border:1px solid #eee;">Aug</td><td style="padding:7px 12px;border:1px solid #eee;"><strong>All major ASX names</strong></td><td style="padding:7px 12px;border:1px solid #eee;">FY26 Reporting Season begins</td><td style="padding:7px 12px;border:1px solid #eee;color:#2E75B6;">GROWTH + All</td></tr>
+    <tr><td style="padding:7px 12px;border:1px solid #eee;">6 Aug</td><td style="padding:7px 12px;border:1px solid #eee;"><strong>NXG</strong></td><td style="padding:7px 12px;border:1px solid #eee;">1H26 Results — Morgans (virtual 9:30am)</td><td style="padding:7px 12px;border:1px solid #eee;">—</td></tr>
+  </tbody>
+</table>
+
+<!-- SECTION 11: ACTION ITEMS -->
+<h2 style="font-size:13px;font-weight:bold;color:#fff;background:#2E75B6;padding:7px 14px;margin:24px -44px 14px -44px;letter-spacing:0.4px;">11 — ACTION ITEMS</h2>
+<ol style="margin:0 0 16px 0;padding-left:20px;font-size:13px;line-height:1.8;">
+  <li><strong>FMG position/view:</strong> GS Sell downgrade + CMRG delivery ban from 15 July. If any FMG exposure, review thesis urgently. Iron ore sub-$100 and supply-term standoff = double headwind.</li>
+  <li><strong>PXA Market Call 9:30am:</strong> Register for Morgans' market call on IPART draft. 20% cut above expectations; 4-year phase-in vs 1-year is the key outcome to watch.</li>
+  <li><strong>OCL watchlist entry:</strong> B* calling DoD contract loss a material overreaction at 13x ex-cash PE. Review note in full and consider adding to watchlist/sizing.</li>
+  <li><strong>VEA crack spreads:</strong> Monitor Minas 211 and Singapore jet fuel daily. US$31.5/bbl Minas crack is at multi-month lows — FY26 EBITDA estimates likely coming down further.</li>
+  <li><strong>Semi sector monitoring:</strong> SOX -5.4%; SemiCap -9.9% over two days. Read GS momentum note (Data&amp;Quant - Swinbourne B*). Assess any ASX tech/software names that may gap on sentiment.</li>
+  <li><strong>QOR Scheme Court 7 July:</strong> Final legal hurdle. Implementation 17 July. Confirm position and monitor communications.</li>
+  <li><strong>Platform quarterlies (NWL 16 Jul, HUB 21 Jul):</strong> Morgans says flows backdrop looks solid. These are the next key data points for GROWTH portfolio. Pre-register for HUB event.</li>
+  <li><strong>RMD position:</strong> +3.3% implied offshore; GS adds to APAC Conviction List; Morgans reiterate Buy $41.72 at 16x fwd PE. Consider whether to add on dip relative to thesis.</li>
+  <li><strong>Pick up gun safes today (8am).</strong></li>
+  <li><strong>EAM Daily Huddle 1:30pm:</strong> Teams meeting ID 480 463 720 726 07, Passcode CX2Dw9Pf.</li>
+</ol>
+
+<!-- SECTION 12: TECH -->
+<h2 style="font-size:13px;font-weight:bold;color:#fff;background:#2E75B6;padding:7px 14px;margin:24px -44px 14px -44px;letter-spacing:0.4px;">12 — WHAT'S HAPPENING IN TECH</h2>
+
+<div style="border:1px solid #e5e7eb;border-radius:6px;padding:14px 18px;margin-bottom:12px;">
+  <p style="margin:0 0 4px 0;font-size:13.5px;font-weight:bold;color:#1a1a1a;">Claude Fable 5 Restored Globally After US Export Control Lifted</p>
+  <p style="margin:0 0 8px 0;font-size:12.5px;color:#374151;line-height:1.55;">The US Commerce Department lifted export controls on Claude Fable 5 on June 30, after pulling it offline on June 12. Anthropic began restoring global access on July 1 across Claude.ai, Claude Platform, Claude Code, and Claude Cowork. Simultaneously, Anthropic launched Claude Sonnet 5 at introductory API pricing of $2/$10 per million input/output tokens through August 31 — near Opus 4.8 performance at substantially lower cost.</p>
+  <p style="margin:0;font-size:11.5px;color:#6b7280;"><strong>Why it matters:</strong> The export control episode highlighted AI's growing role in US trade policy; rapid resolution signals regulatory pragmatism ahead of major enterprise deployments.</p>
+</div>
+
+<div style="border:1px solid #e5e7eb;border-radius:6px;padding:14px 18px;margin-bottom:12px;">
+  <p style="margin:0 0 4px 0;font-size:13.5px;font-weight:bold;color:#1a1a1a;">China's GLM-5.2 Claims Near-Parity with OpenAI and Anthropic at a Fraction of the Cost</p>
+  <p style="margin:0 0 8px 0;font-size:12.5px;color:#374151;line-height:1.55;">Chinese startup Z.ai released GLM-5.2, claiming capabilities nearly on par with leading US models at dramatically lower inference costs. The news served as the primary "excuse" for the second wave of semiconductor selling (SOX -5.4%), continuing the Deepseek-style demand-erosion fear narrative for US chip companies. The model has not yet been independently validated at scale.</p>
+  <p style="margin:0;font-size:11.5px;color:#6b7280;"><strong>Why it matters:</strong> Each Chinese AI parity claim amplifies concern that high-end GPU demand forecasts are overstated — a direct threat to the semi valuation premium built on AI capex expectations.</p>
+</div>
+
+<div style="border:1px solid #e5e7eb;border-radius:6px;padding:14px 18px;margin-bottom:12px;">
+  <p style="margin:0 0 4px 0;font-size:13.5px;font-weight:bold;color:#1a1a1a;">California Signs Largest US State Government AI Deal with Anthropic</p>
+  <p style="margin:0 0 8px 0;font-size:12.5px;color:#374151;line-height:1.55;">Governor Newsom announced every California state agency and opting-in city/county will receive access to Claude at a 50% discount, with free workforce training and specialist AI technical assistance. The deal covers 39 million Californians' government services. Anthropic's AI for Science initiative also delivered a major research finding: deterministic tools pushed AI biology accuracy from 16.9% to 92.8%.</p>
+  <p style="margin:0;font-size:11.5px;color:#6b7280;"><strong>Why it matters:</strong> Government AI adoption is accelerating past proof-of-concept into large-scale deployment — a meaningful revenue diversification signal for AI providers and a positive read for enterprise AI stocks (Palantir, Salesforce, ServiceNow).</p>
+</div>
+
+<div style="border:1px solid #e5e7eb;border-radius:6px;padding:14px 18px;margin-bottom:12px;">
+  <p style="margin:0 0 4px 0;font-size:13.5px;font-weight:bold;color:#1a1a1a;">Meta AI Agents "Not Accelerating as Expected" — Zuckerberg</p>
+  <p style="margin:0 0 8px 0;font-size:12.5px;color:#374151;line-height:1.55;">Reports that Zuckerberg indicated Meta's AI agent development over the last four months has not accelerated at the pace the company expected hit the stock hard (-4.9%). This comes despite Meta contracting 5GW+ of compute capacity in H1 2026 and signalling "shockingly high" 2027 capex. The gap between capex commitment and visible agent revenue materialisation is widening.</p>
+  <p style="margin:0;font-size:11.5px;color:#6b7280;"><strong>Why it matters:</strong> Meta's AI agent timeline slippage raises questions about whether the entire industry's AI monetisation timeline is being pushed out — directly relevant to software names with AI revenue embedded in valuations.</p>
+</div>
+
+<!-- FOOTER -->
+<div style="margin-top:28px;padding-top:12px;border-top:1px solid #e5e7eb;font-size:11px;color:#888;text-align:center;">
+  Sources: Barrenjoey, Goldman Sachs, Morgans, UCPS, Blue Ocean Equities (BOEQ/Mizuho), Google Calendar, web market data · Generated 9:35am AEDT 3 July 2026 · Confidential — internal use only
+</div>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- BRIEF CONTENT ENDS HERE -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+
+    </div>
+  </div>
+</div>
+<div id="status-toast"></div>
+<script>
+(function() {
+  const STORAGE_KEY = 'morning_brief_v1';
+  const MAX_DAYS = 30;
+  const contentDiv = document.getElementById('brief-content');
+  const select = document.getElementById('history-select');
+  const reloadBtn = document.getElementById('reload-btn');
+  const toast = document.getElementById('status-toast');
+  const badge = document.getElementById('viewing-badge');
+  const TODAY = contentDiv.getAttribute('data-date') || new Date().toISOString().slice(0,10);
+  function loadHistory() { try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch(e) { return {}; } }
+  function saveHistory(h) { const keys = Object.keys(h).sort().reverse(); if (keys.length > MAX_DAYS) keys.slice(MAX_DAYS).forEach(k => delete h[k]); try { localStorage.setItem(STORAGE_KEY, JSON.stringify(h)); } catch(e) {} }
+  function fmtDate(iso) { try { const d = new Date(iso + 'T12:00:00'); return d.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short', year: '2-digit' }); } catch(e) { return iso; } }
+  function showToast(msg, ms) { toast.textContent = msg; toast.style.display = 'block'; clearTimeout(showToast._t); showToast._t = setTimeout(() => toast.style.display = 'none', ms || 3000); }
+  const rawHTML = contentDiv.innerHTML.trim();
+  let history = loadHistory();
+  if (rawHTML.length > 500) { history[TODAY] = rawHTML; saveHistory(history); }
+  function buildSelect(active) {
+    history = loadHistory();
+    const dates = Object.keys(history).sort().reverse();
+    select.innerHTML = '';
+    if (!dates.length) { select.innerHTML = '<option>No history yet</option>'; return; }
+    dates.forEach(date => {
+      const opt = document.createElement('option');
+      opt.value = date;
+      opt.textContent = date === TODAY ? '★ ' + fmtDate(date) + '  (today)' : fmtDate(date);
+      if (date === (active || TODAY)) opt.selected = true;
+      select.appendChild(opt);
+    });
+  }
+  buildSelect();
+  select.addEventListener('change', () => {
+    const date = select.value;
+    if (!date) return;
+    if (date === TODAY) { contentDiv.innerHTML = rawHTML; badge.style.display = 'none'; }
+    else { const h = loadHistory(); contentDiv.innerHTML = h[date] || '<div style="padding:60px;text-align:center;color:#94a3b8;font-size:14px;">No brief saved for this date.</div>'; badge.textContent = '📅 Viewing archived brief — ' + fmtDate(date); badge.style.display = 'block'; }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  reloadBtn.addEventListener('click', async () => {
+    if (reloadBtn.classList.contains('running')) return;
+    reloadBtn.classList.add('running');
+    reloadBtn.innerHTML = '<span class="spin">↻</span> Running…';
+    try { await window.cowork.runScheduledTask('morning-brief'); reloadBtn.innerHTML = '✓ Triggered'; showToast('Brief generation started — artifact updates in ~2 min.', 6000); }
+    catch(e) { reloadBtn.innerHTML = '↻ Reload'; showToast('Could not trigger task — run manually from Scheduled Tasks.', 4000); }
+    finally { setTimeout(() => { reloadBtn.classList.remove('running'); reloadBtn.innerHTML = '↻ Reload'; }, 8000); }
+  });
+})();
+</script>
+</body>
+</html>
